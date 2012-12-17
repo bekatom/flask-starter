@@ -1,2 +1,2 @@
-flask-starter
+Flask starter kit with mongodb and Kube
 =============
