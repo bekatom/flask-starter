@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+    {{ message }}
+
+    <form method="post" action="/contact" class="forms columnar">
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="user_email" class="bold">Email</label>
+                    <input type="email" name="user_email" id="user_email" size="40">
+                </li>
+                <li>
+                    <label class="bold">Subject</label>
+                    <input type="text" name="subject"  size="40">
+                </li>
+
+                <li>
+                    <fieldset>
+                        <section><label class="bold">Textarea</label></section>
+                        <textarea class="width-100" style="height: 100px;"></textarea>
+                    </fieldset>
+                </li>
+                <li class="push">
+                    <input type="submit" name="send" class="btn" value="Send">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+
+
+
+{% endblock %}
