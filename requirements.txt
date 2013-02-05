@@ -1,5 +1,7 @@
-Flask>=0.7
-Flask-WTF>=0.6
+flask
 flask-script
+WTForms
 mongoengine
 flask-mongoengine
+flask-sijax
+simplejson
